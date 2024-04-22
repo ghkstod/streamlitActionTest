@@ -11,5 +11,6 @@ dependencies:
       - streamlit
       - google-cloud-bigquery 
       - pandas-gbq
+      - scikit-learn
 # prefix: /home/j2hoon85/miniconda3/envs/condagcp
 # prefix : C:\Users\j2hoo\anaconda3\envs\condagcp
