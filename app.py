@@ -17,7 +17,7 @@ except:
         service_account_email=credentials.service_account_email)
 
 # GCP 프로젝트
-project_id = 'streamlitbook-evan'
+project_id = 'mulcamp-project0312'
 client = bigquery.Client(credentials = credentials, project=project_id)
 
 @st.cache_data(ttl=600)
@@ -88,7 +88,7 @@ def main():
     st.markdown('<p class="gcp-font">BigQuery with Streamlit</p>', unsafe_allow_html=True)
 
     query = '''
-        SELECT * FROM `streamlitbook-evan.kaggle.transformed_train`
+        SELECT * FROM `mulcamp-project0312.kaggle.train`
     '''
 
     data = getData(query)
